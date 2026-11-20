@@ -1,0 +1,97 @@
+{
+  "title": "Assignment #5: A Small Web Site with CSS / My Biography",
+  "course": "COMP2057 Introduction to the Internet",
+  "total_marks": 50,
+  "summary": "Build a four-page personal portfolio (mybio.html, education.html, work.html, hobbies.html) with one external style sheet (mycss.css).",
+  "required_files": ["mybio.html", "education.html", "work.html", "hobbies.html", "mycss.css"],
+  "requirements": [
+    "mybio.html is the home page and has a menu linking to the other pages, plus content.",
+    "All links from the home page navigate correctly.",
+    "education.html demonstrates inline/embedded CSS and includes a form.",
+    "work.html has a table formatted with the external style sheet.",
+    "hobbies.html includes at least 3 images and one image map.",
+    "Content means paragraph text roughly the size of a ~100-word paragraph."
+  ],
+  "criteria": [
+    {
+      "id": "html_elements",
+      "name": "HTML Elements & Properties and Correct Syntax",
+      "max_marks": 20,
+      "description": "Uses the required HTML items with correct syntax: DOCTYPE, <html>, <head>, <title>, <body>, <p>, <h1..h6>, <hr />, <br />, <b>/<strong>, <i>/<em>, <img />, <table>, <a href>, image map, feedback form, indentation & spacing, internal documentation, CSS. One mark deduction per HTML error.",
+      "levels": [
+        {"label": "Exemplary", "min_marks": 20, "max_marks": 20, "description": "All items included with correct syntax."},
+        {"label": "Accomplished", "min_marks": 17, "max_marks": 19, "description": "1-3 items missing."},
+        {"label": "Proficient", "min_marks": 14, "max_marks": 16, "description": "4-6 items missing."},
+        {"label": "Developing", "min_marks": 11, "max_marks": 13, "description": "7-9 items missing."},
+        {"label": "Beginning", "min_marks": 0, "max_marks": 10, "description": "10 or fewer items included."}
+      ],
+      "grading_mode": "automated",
+      "how_to_check": "Check each item across all pages; count missing items; subtract one mark per HTML syntax error."
+    },
+    {
+      "id": "content",
+      "name": "Webpage Content",
+      "max_marks": 10,
+      "description": "All four pages are present, working, and contain paragraph content; one style sheet is present.",
+      "levels": [
+        {"label": "Exemplary", "min_marks": 10, "max_marks": 10, "description": "All pages contain content; four working pages and one style sheet."},
+        {"label": "Accomplished", "min_marks": 8, "max_marks": 9, "description": "Most pages contain content; four working pages and one style sheet."},
+        {"label": "Proficient", "min_marks": 7, "max_marks": 7, "description": "Some pages contain content; three or more working pages."},
+        {"label": "Developing", "min_marks": 5, "max_marks": 5, "description": "Few pages contain content; two or more working pages."},
+        {"label": "Beginning", "min_marks": 2, "max_marks": 2, "description": "No content; one or more working pages."}
+      ],
+      "grading_mode": "automated",
+      "how_to_check": "A page 'contains content' if its <p> text totals roughly 80+ words."
+    },
+    {
+      "id": "navigation",
+      "name": "Navigation",
+      "max_marks": 5,
+      "description": "Links are consistent, easy to find and work; image/icon links enhance navigation.",
+      "levels": [
+        {"label": "Exemplary", "min_marks": 5, "max_marks": 5, "description": "Links created with images and text; icons enhance navigation."},
+        {"label": "Accomplished", "min_marks": 4, "max_marks": 4, "description": "Links consistent and easy to find; navigate back and forth."},
+        {"label": "Proficient", "min_marks": 3, "max_marks": 3, "description": "User may become confused; some links may not work."},
+        {"label": "Developing", "min_marks": 2, "max_marks": 2, "description": "User may become lost; links missing or not working."},
+        {"label": "Beginning", "min_marks": 1, "max_marks": 1, "description": "Only one web page is found."}
+      ],
+      "grading_mode": "automated",
+      "how_to_check": "Every page should link to every other page with working, correctly-cased links."
+    },
+    {
+      "id": "images",
+      "name": "Images",
+      "max_marks": 10,
+      "description": "Images are small or optimised with height= and width=; every image has a descriptive alt.",
+      "levels": [
+        {"label": "Exemplary", "min_marks": 10, "max_marks": 10, "description": "Small/optimised with height and width; descriptive alt on every image."},
+        {"label": "Accomplished", "min_marks": 8, "max_marks": 9, "description": "Reasonably small; could add height/width; all images have descriptive alt."},
+        {"label": "Proficient", "min_marks": 7, "max_marks": 7, "description": "Reasonably small; most images have descriptive alt."},
+        {"label": "Developing", "min_marks": 5, "max_marks": 5, "description": "Images large/slow; most images lack alt."},
+        {"label": "Beginning", "min_marks": 2, "max_marks": 2, "description": "Excessively large graphics; all images lack alt."}
+      ],
+      "grading_mode": "automated",
+      "how_to_check": "Check alt text, width/height attributes and file sizes for every <img>."
+    },
+    {
+      "id": "spelling",
+      "name": "Proper Spelling, Capitalization, Grammar, and Punctuation",
+      "max_marks": 5,
+      "description": "Text is free of spelling, grammar, punctuation and capitalization mistakes.",
+      "levels": [
+        {"label": "Exemplary", "min_marks": 5, "max_marks": 5, "description": "No mistakes."},
+        {"label": "Accomplished", "min_marks": 3, "max_marks": 4, "description": "1-2 mistakes."},
+        {"label": "Proficient", "min_marks": 2, "max_marks": 2, "description": "3 mistakes."},
+        {"label": "Developing", "min_marks": 1, "max_marks": 1, "description": "4 mistakes."},
+        {"label": "Beginning", "min_marks": 0, "max_marks": 0, "description": "5 or more mistakes."}
+      ],
+      "grading_mode": "ai",
+      "how_to_check": "Count distinct mistakes in the visible text of all pages."
+    }
+  ],
+  "deductions": [
+    {"reason": "Improper filenames", "marks": null},
+    {"reason": "Incorrect file types", "marks": null}
+  ],
+  "notes": "Server upload and Brightspace zip requirements cannot be verified from the files and are left to the instructor."
+}

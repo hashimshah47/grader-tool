@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rubric to Checker — AI assignment grader</title>
+  <meta name="description" content="Upload a rubric; an AI agent writes, tests and fixes a Python grading script for HTML/CSS/JS assignments, then grades every submission." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect x=%225%22 y=%223%22 width=%2220%22 height=%2226%22 rx=%222%22 fill=%22%23fff%22 stroke=%22%231c2b45%22 stroke-width=%222%22/%3E%3Cpath d=%22M17 22l3 3 7-9%22 fill=%22none%22 stroke=%22%23c4122f%22 stroke-width=%222.6%22 stroke-linecap=%22round%22/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Caveat:wght@600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <aside class="rail" aria-label="Projects">
+      <a class="brand" href="#/">
+        <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="5" y="3" width="20" height="26" rx="2" fill="#fff" stroke="currentColor" stroke-width="2"/><path d="M9 10h12M9 15h12M9 20h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 22l3 3 7-9" fill="none" stroke="#C4122F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Rubric to Checker</span>
+      </a>
+      <a class="btn btn-ghost new" href="#/">New rubric</a>
+      <h2 class="rail-h">Your assignments</h2>
+      <ul id="projectList" class="plist"></ul>
+      <div class="mode" id="modeBadge"></div>
+    </aside>
+    <main id="main" tabindex="-1"></main>
+  </div>
+
+  <div class="drawer" id="drawer" hidden>
+    <div class="drawer-scrim" data-close></div>
+    <section class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+      <button class="icon-btn drawer-x" data-close aria-label="Close">×</button>
+      <div id="drawerBody"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

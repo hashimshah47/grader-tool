@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Author: Alex Rivera | COMP2057 Assignment 5 | Education -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Education | Alex Rivera</title>
+    <link rel="stylesheet" href="mycss.css" />
+    <!-- Embedded style sheet for this page only -->
+    <style>
+      .highlight { color: #8a3b12; font-style: italic; }
+      form { background-color: #f3f6fb; padding: 12px; width: 420px; }
+    </style>
+  </head>
+  <body>
+
+    <!-- Site navigation: icon + text links on every page -->
+    <nav class="menu">
+      <a href="mybio.html"><img src="images/home.png" alt="House icon for the About Me page" width="24" height="24" /> About Me</a>
+      <a href="education.html"><img src="images/book.png" alt="Book icon for the Education page" width="24" height="24" /> Education</a>
+      <a href="work.html"><img src="images/briefcase.png" alt="Briefcase icon for the Work page" width="24" height="24" /> Work</a>
+      <a href="hobbies.html"><img src="images/star.png" alt="Star icon for the Hobbies page" width="24" height="24" /> Hobbies</a>
+    </nav>
+
+    <hr />
+
+    <!-- Education history -->
+    <h1 style="color: #2b4c7e; text-align: center;">Education</h1>
+    <p>
+      I am currently enrolled in the <b>Bachelor of Computer Science</b> program at the University
+      of Windsor. My favourite courses so far have been Introduction to the Internet, where I learned
+      how browsers, servers and markup work together, and Data Structures, which changed the way I
+      think about organising information. Before university I completed my high school diploma with
+      honours, and I spent two summers volunteering as a math tutor at the public library. Teaching
+      younger students showed me how important patience and clear examples are when you are
+      learning something new for the first time.
+    </p>
+    <h2 class="highlight">Courses I enjoyed</h2>
+    <p>Introduction to the Internet, Data Structures, Discrete Mathematics and Technical Writing.</p>
+
+    <!-- Feedback form -->
+    <h2>Send me feedback</h2>
+    <form action="mailto:alex@example.com" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br />
+      <label for="comments">Comments:</label><br />
+      <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br />
+      <input type="submit" value="Send" />
+    </form>
+
+    <hr />
+    <!-- Footer -->
+    <footer>
+      <p class="small">&copy; 2026 Alex Rivera. Built by hand with a text editor.</p>
+    </footer>
+  </body>
+</html>

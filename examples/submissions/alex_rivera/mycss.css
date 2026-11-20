@@ -1,0 +1,39 @@
+/* mycss.css - shared styles for Alex Rivera's portfolio */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0 auto;
+  max-width: 900px;
+  color: #222;
+  background-color: #fdfcf8;
+}
+
+/* Navigation menu */
+.menu a {
+  display: inline-block;
+  padding: 6px 12px;
+  color: #2b4c7e;
+  text-decoration: none;
+}
+.menu a:hover {
+  background-color: #e3ebf7;
+}
+
+/* Work table */
+table.jobs {
+  border-collapse: collapse;
+  width: 100%;
+}
+table.jobs th,
+table.jobs td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: left;
+}
+table.jobs th {
+  background-color: #2b4c7e;
+  color: white;
+}
+
+.small {
+  font-size: 0.8em;
+}
