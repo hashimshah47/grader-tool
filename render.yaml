@@ -1,0 +1,26 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: rubric-to-checker
+    runtime: docker
+    plan: free                  # change to "starter" (paid) for always-on + a persistent disk
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/status
+    autoDeploy: true
+    envVars:
+      - key: ANTHROPIC_API_KEY  # leave empty for demo mode; Render asks for it on first deploy
+        sync: false
+      - key: DEMO_ONLY          # "1" = public demo that never spends your API credits
+        value: "1"
+      - key: CHECKER_MODEL
+        value: claude-sonnet-5-5
+      - key: GRADE_CONCURRENCY  # small instances have little RAM; grade 2 students at a time
+        value: "2"
+      - key: DATA_DIR
+        value: /app/data
+    # Paid plans only: keep projects and results across deploys/restarts.
+    # disk:
+    #   name: data
+    #   mountPath: /var/data
+    #   sizeGB: 1
+    # ...and set DATA_DIR to /var/data above.

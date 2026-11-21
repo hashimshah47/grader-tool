@@ -79,7 +79,10 @@ def _limits() -> None:  # pragma: no cover - runs in the child
         resource.setrlimit(resource.RLIMIT_NPROC, (256, 256))
     except Exception:
         pass
-    os.setsid()
+    try:
+        os.setsid()
+    except Exception:
+        pass
 
 
 def run_checker(code: str, submission_dir: str | Path, timeout: float = 90) -> dict:

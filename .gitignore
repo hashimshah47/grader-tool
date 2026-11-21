@@ -4,5 +4,3 @@ __pycache__/
 *.pyc
 data/
 .pytest_cache/
-.env.example
-prevRead.md
